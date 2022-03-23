@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+
+
+<script>
+
+  let pessoas = ["Thiago", "Marcela", "Ingrid", "Julinha", "Alesson" ]
+  
+  
+  function sortear(){
+  
+    let np = pessoas.length
+    let ns = Math.floor(Math.random() * np)
+    document.getElementById("sorte").innerHTML = pessoas[ns]
+  }
+  
+  </script>
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ <style>
+body{
+  background-color: rgba(6, 71, 6, 0.932);
+  color: whitesmoke;
+}
+
+header{
+  text-align: center;
+  background-color: black;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.705);
+  font-family: 'Josefin Sans';
+}
+
+section{
+  text-align: center;
+  background-color: black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.705);
+  font-family: 'Josefin Sans';
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+footer{
+  text-align: center;
+  font-family: 'Josefin Sans';
+}
+
+button{
+  margin-top: 50px;
+}
+
+
+  </style>
+
+</head>
+<body>
+
+
+<header>
+<h1>ESCOLHA UM NUMERO DE 0 A 100!</h1>
+</header>
+
+<section>
+<h1 id="sorte">De 0  a 100!</h1>
+
+<button onclick="sortear()">SORTEAR</button>
+</section>
+
+<footer>
+<p>&copy;thiagohitalx</p>
+
+</footer>
+
+
+
+</body>
+</html>
